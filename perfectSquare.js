@@ -1,11 +1,12 @@
-
-
-function perfectSquare (n) {
-    let num = Math.sqrt(n) + 1;
-
-    console.log(num);
-    let perfectSq = num * num;    
-    return perfectSq
+function perfectSquare(n) {
+  let num = Math.sqrt(n) + 1;
+  let perfectSq = num * num;
+  if (Number.isInteger(num)) {
+    //console.log(num);
+    return perfectSq;
+  } else {
+    return -1;
+  }
 }
 
 console.log(perfectSquare(9)); // should return 16 (3x3=9, 4x4=16)
